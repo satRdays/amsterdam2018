@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<style>
+		#map {
+			top:0;
+			bottom:0;
+			width:100%;
+			height:500px
+		}
+	</style>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="header clearfix">
+		<nav>
+			<ul class="nav nav-pills float-right">
+				<!--<li class="nav-item">-->
+					<!--<a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>-->
+				<!--</li>-->
+				<!--<li class="nav-item">-->
+					<!--<a class="nav-link" href="#">About</a>-->
+				<!--</li>-->
+				<!--<li class="nav-item">-->
+					<!--<a class="nav-link" href="#">Contact</a>-->
+				<!--</li>-->
+			</ul>
+		</nav>
+		<h3 class="text-muted"></h3>
+	</div>
+
+	<div class="jumbotron">
+		<h1 class="display-3">SatRdays Amsterdam</h1>
+		<h2>September 2017</h2>
+		<!--<p class="lead">Worth the wait ...</p>-->
+		<!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+	</div>
+
+	<hr>
+
+	<div class="row marketing">
+		<div class="col-lg-6">
+			<h4>Super Cheap!</h4>
+			<p>Tickets are only 30 euro's. </p>
+
+			<h4>Great Location!</h4>
+			<p>Walking distance from Amstel station.</p>
+		</div>
+
+		<div class="col-lg-6">
+			<h4>Community!</h4>
+			<p>Great speakers from the community.</p>
+
+			<h4>Training Day!</h4>
+			<p>There will be a beginner event attached!</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row marketing">
+		<div class="col-lg-12">
+			<h2>Call for Speakers</h2>
+			<br>
+		</div>
+		<div class="col-lg-12">
+			To be announced soon ...
+			<p></p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row marketing">
+		<div class="col-lg-12">
+			<h2>Speakers</h2>
+			<br>
+		</div>
+		<div class="col-lg-12">
+			To be announced soon ...
+			<p></p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row marketing">
+		<div class="col-lg-12">
+			<h2>Sponsors</h2>
+			<br>
+		</div>
+		<div class="col-lg-12">
+			These cool companies wanted to give something back to the community by sponsoring this event. To be announced soon ...
+			<p></p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row marketing">
+		<div class="col-lg-12">
+			<h2>Committee</h2>
+			<br>
+		</div>
+		<div class="col-lg-3">
+			<h4>Vincent</h4>
+			<p></p>
+		</div>
+		<div class="col-lg-3">
+			<h4>Steven</h4>
+			<p></p>
+		</div>
+		<div class="col-lg-3">
+			<h4>Roel</h4>
+			<p></p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row marketing">
+		<div class="col-lg-12">
+			<h2>Location</h2>
+			<br>
+		</div>
+		<div class="col-lg-12">
+
+			<div id='map'></div>
+			<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoiY2FudGR1dGNodGhpcyIsImEiOiI1NkVyQUFjIn0.jJ_k-m_D11QLgBGUU0M-jQ';
+				var map = new mapboxgl.Map({
+					container: 'map', // container id
+					style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
+					center: [4.912933, 52.352346], // starting position [lng, lat]
+					zoom: 15 // starting zoom
+				});
+				map.loadImage('satRdayLogo-small.png', function(error, image) {
+				 	if (error) throw error;
+			        map.addImage('cat', image);
+					map.addLayer({
+						"id": "points",
+						"type": "symbol",
+						"source": {
+							"type": "geojson",
+							"data": {
+								"type": "FeatureCollection",
+								"features": [{
+									"type": "Feature",
+									"geometry": {
+										"type": "Point",
+										"coordinates": [4.912933, 52.352346]
+									}
+								}]
+							}
+						},
+						"layout": {
+							"icon-image": "cat",
+							"icon-size": 0.25
+						}
+					});
+				});
+			</script>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<p class="text-right">SatRdays are funded via the <a href="https://www.r-consortium.org">R consortium</a>.</p>
+	</footer>
+
+</div> <!-- /container -->
+
+</body>
