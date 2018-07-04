@@ -38,6 +38,8 @@
 <!-- other scripts for bootstrap to work -->
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<style>
 		#map {
@@ -55,35 +57,19 @@
 	<div class="header clearfix">
 		<nav>
 			<ul class="nav nav-pills float-right">
-				<li class="nav-item">
-					<a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#basicinfo">About</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#speakers">Speakers</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#workshops">Workshops</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#program">Program</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#location">Venue</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#cfs">Call for speakers</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#registration">Registration</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#sponsors">Sponsors</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Fast Travel</a>
+				    <div class="dropdown-menu">
+				      	<a class="dropdown-item" href="#basicinfo">About</a>
+						<a class="dropdown-item" href="#speakers">Speakers</a>
+						<a class="dropdown-item" href="#workshops">Workshops</a>
+						<a class="dropdown-item" href="#program">Program</a>
+						<a class="dropdown-item" href="#location">Venue</a>
+						<a class="dropdown-item" href="#cfs">Call for speakers</a>
+						<a class="dropdown-item" href="#registration">Registration</a>
+						<a class="dropdown-item" href="#contact">Contact</a>
+						<a class="dropdown-item" href="#sponsors">Sponsors</a>
+				    </div>
 				</li>
 			</ul>
 		</nav>
