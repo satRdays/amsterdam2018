@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,482 +14,534 @@
         -->
 
 
-    <meta property="og:image" content="http://amsterdam2018.satrdays.org/photos/square_bike.jpg" />
+    <meta property="og:image" content="http://amsterdam2018.satrdays.org/photos/square_bike.jpg"/>
     <link rel="image_src" href="http://amsterdam2018.satrdays.org/photos/square_bike.jpg"/>
-    <meta name="description" content="SatRDays are community-led, regional conferences to support collaboration, networking and innovation within the R community. This satRday event will be held in Amsterdam, The Netherlands on the 1st of September 2018." />
-    <meta property="og:url" content="http://amsterdam2018.satrdays.org/" />
-    <meta property="og:title"  content="satRday Amsterdam 2018" />
+    <meta name="description"
+          content="SatRDays are community-led, regional conferences to support collaboration, networking and innovation within the R community. This satRday event will be held in Amsterdam, The Netherlands on the 1st of September 2018."/>
+    <meta property="og:url" content="http://amsterdam2018.satrdays.org/"/>
+    <meta property="og:title" content="satRday Amsterdam 2018"/>
 
     <!-- And of course twitter!  --->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@satRdays_org">
     <meta name="twitter:title" content="SatRday 2018-09-01  @Amsterdam">
-    <meta name="twitter:description" content="SatRdays are coming to Amsterdam! Join your fellow enthusiasts in this one day event. Meet like minded people, get inspired, find your next project. See you at september 1st @godatadriven in Amsterdam">
+    <meta name="twitter:description"
+          content="SatRdays are coming to Amsterdam! Join your fellow enthusiasts in this one day event. Meet like minded people, get inspired, find your next project. See you at september 1st @godatadriven in Amsterdam">
     <meta name="twitter:image" content="http://amsterdam2018.satrdays.org/photos/square_bike.jpg">
 
     <title>satRday @ Amsterdam 2018</title>
 
-     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<!-- javascript for the map view at the bottom -->
-	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet' />
-	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
-<!-- other scripts for bootstrap to work -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- javascript for the map view at the bottom -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet'/>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
+    <!-- other scripts for bootstrap to work -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    <style>
 		#map {
 			top:0;
 			bottom:0;
 			width:100%;
 			height:500px
 		}
-	</style>
+
+    </style>
 </head>
 <body>
 
 <div class="container">
 
-	<div class="header clearfix">
-		<nav>
-			<ul class="nav nav-pills float-right">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Fast Travel</a>
-				    <div class="dropdown-menu">
-				      	<a class="dropdown-item" href="#basicinfo">About</a>
-						<a class="dropdown-item" href="#speakers">Speakers</a>
-						<a class="dropdown-item" href="#workshops">Workshops</a>
-						<a class="dropdown-item" href="#program">Program</a>
-						<a class="dropdown-item" href="#location">Venue</a>
-						<a class="dropdown-item" href="#registration">Registration</a>
-						<a class="dropdown-item" href="#contact">Contact</a>
-						<a class="dropdown-item" href="#sponsors">Sponsors</a>
-				    </div>
-				</li>
-			</ul>
-		</nav>
-		<h3 class="text-muted"></h3>
-	</div>
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills float-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Fast Travel</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#basicinfo">About</a>
+                        <a class="dropdown-item" href="#speakers">Speakers</a>
+                        <a class="dropdown-item" href="#workshops">Workshops</a>
+                        <a class="dropdown-item" href="#program">Program</a>
+                        <a class="dropdown-item" href="#location">Venue</a>
+                        <a class="dropdown-item" href="#registration">Registration</a>
+                        <a class="dropdown-item" href="#contact">Contact</a>
+                        <a class="dropdown-item" href="#sponsors">Sponsors</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <h3 class="text-muted"></h3>
+    </div>
 
-	<div class="jumbotron" id="home">
+    <div class="jumbotron" id="home">
 
-		<h1 class="display-3">satRday Amsterdam</h1>
-		<h2>September 1st 2018</h2>
-    	Attend Amsterdam's first satRday conference. <a href="#registration"> Buy your ticket!</a>
+        <h1 class="display-3">satRday Amsterdam</h1>
+        <h2>September 1st 2018</h2>
+        Attend Amsterdam's first satRday conference. <a href="#registration"> Buy your ticket!</a>
 
-		<!--<p class="lead">Worth the wait ...</p>-->
-		<!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
-	</div>
+        <!--<p class="lead">Worth the wait ...</p>-->
+        <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+    </div>
 
-	<hr>
+    <hr>
 
-	<div class="wrap row">
-		<div class="col-sm-12">
-			<img src="photos/canal-logo.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-		</div>
-	</div>
+    <div class="wrap row">
+        <div class="col-sm-12">
+            <img src="photos/canal-logo.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+        </div>
+    </div>
 
 
-	<div class="row marketing">
-		<div class="col-sm-6">
-			<h4>Community!</h4>
-			<p>Great speakers from the community.</p>
+    <div class="row marketing">
+        <div class="col-sm-6">
+            <h4>Community!</h4>
+            <p>Great speakers from the community.</p>
 
-			<h4>Training Day!</h4>
-			<p>Workshops will be hosted on August 31st.</p>
+            <h4>Training Day!</h4>
+            <p>Workshops will be hosted on August 31st.</p>
 
-			<h4>Open Source Day!</h4>
-			<p>Let's contribute together on September 2nd.</p>
-		</div>
+            <h4>Open Source Day!</h4>
+            <p>Let's contribute together on September 2nd.</p>
+        </div>
 
-		<div class="col-sm-6">
-			<h4>Cheap!</h4>
-			<p>Conference tickets are only 40 euros. </p>
+        <div class="col-sm-6">
+            <h4>Cheap!</h4>
+            <p>Conference tickets are only 40 euros. </p>
 
-			<h4>Great Location!</h4>
-			<p>Walking distance from Amstel station.</p>
+            <h4>Great Location!</h4>
+            <p>Walking distance from Amstel station.</p>
 
-			<h4>Great Food!</h4>
-			<p>And amazing coffee too.</p>
-		</div>
-	</div>
+            <h4>Great Food!</h4>
+            <p>And amazing coffee too.</p>
+        </div>
+    </div>
 
-	<br>
-	<hr>
-	<br>
+    <br>
+    <hr>
+    <br>
 
     <div class="warp row">
-      <div class="col-sm-12" id="basicinfo">
-        <h3> What, Where, When, How </h3>
-      <li> SatRDays are community-led, regional conferences to support collaboration, networking and innovation within the R community.  </li>
-      <li> There's a fantastic R community in Amsterdam looking forward to attending inspiring R talks for an entire day.</li>
-      <li> The main event is a conference on Saturday September 1st 2018. We also host a Workshop Day on Friday, August 31st and an Open Source Day on Sunday, September 2nd.</li>
-      <li> Tickets are just 40 euros for the main event, including taxes. </li>
-      <li> The main event is located at the <a href="#location">GoDataDriven office: Wibautstraat 202, Amsterdam</a>  </li>
-      <li> Please note that this event has a <a href="#codeofconduct">code of conduct</a> </li>
-      </div>
+        <div class="col-sm-12" id="basicinfo">
+            <h3> What, Where, When, How </h3>
+            <li> SatRDays are community-led, regional conferences to support collaboration, networking and innovation
+                within the R community.
+            </li>
+            <li> There's a fantastic R community in Amsterdam looking forward to attending inspiring R talks for an
+                entire day.
+            </li>
+            <li> The main event is a conference on Saturday September 1st 2018. We also host a Workshop Day on Friday,
+                August 31st and an Open Source Day on Sunday, September 2nd.
+            </li>
+            <li> Tickets are just 40 euros for the main event, including taxes.</li>
+            <li> The main event is located at the <a href="#location">GoDataDriven office: Wibautstraat 202,
+                Amsterdam</a></li>
+            <li> Please note that this event has a <a href="#codeofconduct">code of conduct</a></li>
+        </div>
     </div>
 
-	<br>
-	<hr>
+    <br>
+    <hr>
 
-	<div class="row marketing">
-		<div class="col-lg-12" id="speakers">
-			<h1>Speakers</h1>
-			<p>The call for speakers is now closed. Submissions will be assessed until August 2nd. On August 3nd the latest speakers will be notified whether their talk is accepted. Program could always change due to unforseen circumstances.</p>
-			<h2>Keynote Speakers</h2>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Mara Averick</h4>
-			<img src="photos/mara.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">That’s not [data] science!</figcaption>
-		</div>
-	</div>
-	<div class="row marketing">
-		<div class="col-lg-12" id="speakers">
-			<h2>Speakers</h2>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Kirill Müller</h4>
-			<img src="photos/Kirill_Muller.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">DBI: Recent developments in R's database interface</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Jeroen Groot</h4>
-			<img src="photos/jeroen_groot.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Smart Charging, Sustainability, Pricing and Data</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h5>Youssef El Bouhassani</h5>
-			<img src="photos/youssef.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Smart Charging, Sustainability, Pricing and Data</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Longhow Lam</h4>
-			<img src="photos/Longhow_Lam.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Hobby projects with the text2vec package</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Rita Giordano</h4>
-			<img src="photos/Rita_Giordano.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Regular Expressions in R</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Edwin Thoen</h4>
-			<img src="photos/Edwin_Thoen.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Exploring NSE and tidyeval</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Suzan Baert</h4>
-			<img src="photos/Suzan_Baert.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Getting more out of dplyr</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Olga Sholderer</h4>
-			<img src="photos/Olga_Sholderer.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Using R/ R Markdown to create individual reports</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Thomas Hütter</h4>
-			<img src="photos/Thomas_Hutter.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">50 ways to show your data</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Pieter Marcus</h4>
-			<img src="photos/Pieter_Marcus.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">ROC curves are unfit to assess business value</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Jo-Fai Chow</h4>
-			<img src="photos/joe.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Million Dollar Baseball Decisions with R/H2o AutoML/Shiny</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Bob Jansen</h4>
-			<img src="photos/Bob_Jansen.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Solving sudoku's with Rcpp</figcaption>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Rianne Schouten</h4>
-			<img src="photos/rianne_schouten.jpeg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">Generating missing values with R-function ampute</figcaption>
-			<br>
-		</div>
-	</div>
-  <hr>
-
-  <div class="row marketing">
-    <div class="col-lg-12" id="workshops">
-      <h2>Workshops</h2>
-		<p>The workshops are going to happen on the 31st of August from 14:00 till 17:30. There will be two workshops, one about dplyr and the other about scraping. Afterwards, there's a small social event with beers and pizza's. Note that the workshops require an extra ticket and these workshop take place at the Uber Amsterdam office.</p>
-      <br>
+    <div class="row marketing">
+        <div class="col-lg-12" id="speakers">
+            <h1>Speakers</h1>
+            <p>The call for speakers is now closed. Submissions will be assessed until August 2nd. On August 3nd the
+                latest speakers will be notified whether their talk is accepted. Program could always change due to
+                unforseen circumstances.</p>
+            <h2>Keynote Speakers</h2>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Mara Averick</h4>
+            <img src="photos/mara.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">That’s not [data] science!</figcaption>
+        </div>
     </div>
-    <div class="col-sm-4">
-		<h4>Gilian Ponte</h4>
-		<img src="photos/gilian_ponte.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
-		<figcaption class="figure-caption">Scraping the internet with R</figcaption>
-	</div>
-  </div>
-
-  <hr>
-  <div class="row marketing">
-    <div class="col-lg-12" id="program">
-      <h2>Program</h2>
-      <br>
+    <div class="row marketing">
+        <div class="col-lg-12" id="speakers">
+            <h2>Speakers</h2>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Kirill Müller</h4>
+            <img src="photos/Kirill_Muller.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">DBI: Recent developments in R's database interface</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Jeroen Groot</h4>
+            <img src="photos/jeroen_groot.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Smart Charging, Sustainability, Pricing and Data</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h5>Youssef El Bouhassani</h5>
+            <img src="photos/youssef.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Smart Charging, Sustainability, Pricing and Data</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Longhow Lam</h4>
+            <img src="photos/Longhow_Lam.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Hobby projects with the text2vec package</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Rita Giordano</h4>
+            <img src="photos/Rita_Giordano.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Regular Expressions in R</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Edwin Thoen</h4>
+            <img src="photos/Edwin_Thoen.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Exploring NSE and tidyeval</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Suzan Baert</h4>
+            <img src="photos/Suzan_Baert.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Getting more out of dplyr</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Olga Sholderer</h4>
+            <img src="photos/Olga_Sholderer.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Using R/ R Markdown to create individual reports</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Thomas Hütter</h4>
+            <img src="photos/Thomas_Hutter.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">50 ways to show your data</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Pieter Marcus</h4>
+            <img src="photos/Pieter_Marcus.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">ROC curves are unfit to assess business value</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Jo-Fai Chow</h4>
+            <img src="photos/joe.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Million Dollar Baseball Decisions with R/H2o AutoML/Shiny</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Bob Jansen</h4>
+            <img src="photos/Bob_Jansen.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Solving sudoku's with Rcpp</figcaption>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Rianne Schouten</h4>
+            <img src="photos/rianne_schouten.jpeg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Generating missing values with R-function ampute</figcaption>
+            <br>
+        </div>
     </div>
-    <div class="col-lg-12">
-      <table class="table table-striped">
-  <tr>
-    <th>Time</th>
-    <th>Program</th>
-    <th>Speaker</th>
-  </tr>
-  <tr>
-    <td>8.15-8.45</td>
-    <td>Registration</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>8.45-9.00</td>
-    <td>Welcome & opening</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>9.00-9.45</td>
-    <td>Keynote</td>
-    <td><b>Mara Averick</b> <br>That's not [data] science!</td>
-  </tr>
-  <tr>
-    <td>9.45- 10.30</td>
-    <td>Speaker 2</td>
-    <td> <b>Kirill Müller </b> <br>
-DBI: Recent developments in R's database interface
-</td>
-  </tr>
-  <tr>
-    <td>1030-1100</td>
-    <td>coffee break</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>11.00- 11.45</td>
-    <td>Speaker 3</td>
-    <td><b>Suzan Baert</b> <br>
-Getting more out of dplyr
-</td>
-  </tr>
-  <tr>
-    <td>11.45- 12.30</td>
-    <td>Speaker 4</td>
-    <td><b> Dominik Krzemiński </b> <br>
-Making Shiny shine even brighter
-</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>lunch</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>13.30- 14.15</td>
-    <td>Speaker 5</td>
-    <td><b> Edwin Thoen </b> <br>
-An exploration of NSE and tidyeval
-</td>
-  </tr>
-  <tr>
-    <td>14.15- 15.00</td>
-    <td>Speaker 6</td>
-    <td> <b> Thomas Hütter </b> <br>
-50 ways to show your data
-</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>break</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>15.30- 16.30</td>
-    <td>Lightning talks</td>
-    <td>
-    <ol><li><b> Rita Giordano </b> <br>
-Regular Expression in R</li>
-    <li><b>Longhow Lam </b> <br>
-Two hobby projects with the text2vec package</li>
+    <hr>
 
-<li><b> Olga Sholderer </b> <br>
-Using R/ R Markdown to create individual reports </li>
-<li><b> Youssef El Bouhassan   & Jeroen Groot</b> <br> How do we avoid electric cars breaking the national grid?
-</li> </ol>
-
-</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>break</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>16.40- 17.40</td>
-    <td> Lightning talks</td>
-    <td><ol> <li><b> Rianne Schouten </b> <br>
-Generating missing values with R-function ampute </li>
-<li> <b>Pieter Marcus </b> <br>
-Why ROC curves are unfit to assess the business value of your model </li>
-<li> <b>Joe-Fai Chow </b> <br>
-Regular talk: Making multimillion-dollar baseball decisions with R, Shiny and H2O AutoML </li>
-<li> <b>Bob Jansen </b> <br>
-Solving sudoku's with Rcpp </li>
-</ol>
-</td>
-  </tr>
-  <tr>
-    <td>7:40- 19.00</td>
-    <td>Drinks, Food & NetwoRking</td>
-    <td></td>
-  </tr>
-</table>
-
-
-      <p></p>
+    <div class="row marketing">
+        <div class="col-lg-12" id="workshops">
+            <h2>Workshops</h2>
+            <p>The workshops are going to happen on the 31st of August from 14:00 till 17:30. There will be two
+                workshops, one about dplyr and the other about scraping. Afterwards, there's a small social event with
+                beers and pizza's. Note that the workshops require an extra ticket and these workshop take place at the
+                Uber Amsterdam office.</p>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Gilian Ponte</h4>
+            <img src="photos/gilian_ponte.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Scraping the internet with R</figcaption>
+        </div>
     </div>
 
-<div class="row marketing">
-    <div class="col-lg-12" id="open source day">
-      <h2>Open source day</h2>
-		<p>On sunday, everyone who wants to work on an open source project is welcome
-		in the Godatadriven office. We provide coffee and an introduction to git and github
-		for interested people. Always wanted to build a package? Now is the time!</p>
-      <br>
+    <hr>
+    <div class="row marketing">
+        <div class="col-lg-12" id="program">
+            <h2>Program</h2>
+            <br>
+        </div>
+        <div class="col-lg-12">
+            <table class="table table-striped">
+                <tr>
+                    <th>Time</th>
+                    <th>Program</th>
+                    <th>Speaker</th>
+                </tr>
+                <tr>
+                    <td>8.15-8.45</td>
+                    <td>Registration</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8.45-9.00</td>
+                    <td>Welcome & opening</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.00-9.45</td>
+                    <td>Keynote</td>
+                    <td><b>Mara Averick</b> <br>That's not [data] science!</td>
+                </tr>
+                <tr>
+                    <td>9.45- 10.30</td>
+                    <td>Speaker 2</td>
+                    <td><b>Kirill Müller </b> <br>
+                        DBI: Recent developments in R's database interface
+                    </td>
+                </tr>
+                <tr>
+                    <td>1030-1100</td>
+                    <td>coffee break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11.00- 11.45</td>
+                    <td>Speaker 3</td>
+                    <td><b>Suzan Baert</b> <br>
+                        Getting more out of dplyr
+                    </td>
+                </tr>
+                <tr>
+                    <td>11.45- 12.30</td>
+                    <td>Speaker 4</td>
+                    <td><b> Dominik Krzemiński </b> <br>
+                        Making Shiny shine even brighter
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>lunch</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13.30- 14.15</td>
+                    <td>Speaker 5</td>
+                    <td><b> Edwin Thoen </b> <br>
+                        An exploration of NSE and tidyeval
+                    </td>
+                </tr>
+                <tr>
+                    <td>14.15- 15.00</td>
+                    <td>Speaker 6</td>
+                    <td><b> Thomas Hütter </b> <br>
+                        50 ways to show your data
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15.30- 16.30</td>
+                    <td>Lightning talks</td>
+                    <td>
+                        <ol>
+                            <li><b> Rita Giordano </b> <br>
+                                Regular Expression in R
+                            </li>
+                            <li><b>Longhow Lam </b> <br>
+                                Two hobby projects with the text2vec package
+                            </li>
+
+                            <li><b> Olga Sholderer </b> <br>
+                                Using R/ R Markdown to create individual reports
+                            </li>
+                            <li><b> Youssef El Bouhassan & Jeroen Groot</b> <br> How do we avoid electric cars breaking
+                                the national grid?
+                            </li>
+                        </ol>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16.40- 17.40</td>
+                    <td> Lightning talks</td>
+                    <td>
+                        <ol>
+                            <li><b> Rianne Schouten </b> <br>
+                                Generating missing values with R-function ampute
+                            </li>
+                            <li><b>Pieter Marcus </b> <br>
+                                Why ROC curves are unfit to assess the business value of your model
+                            </li>
+                            <li><b>Joe-Fai Chow </b> <br>
+                                Regular talk: Making multimillion-dollar baseball decisions with R, Shiny and H2O AutoML
+                            </li>
+                            <li><b>Bob Jansen </b> <br>
+                                Solving sudoku's with Rcpp
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7:40- 19.00</td>
+                    <td>Drinks, Food & NetwoRking</td>
+                    <td></td>
+                </tr>
+            </table>
+
+
+            <p></p>
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-12" id="open source day">
+                <h2>Open source day</h2>
+                <p>On sunday, everyone who wants to work on an open source project is welcome
+                    in the Godatadriven office. We provide coffee and an introduction to git and github
+                    for interested people. Always wanted to build a package? Now is the time!</p>
+                <br>
+            </div>
+        </div>
+
+        <hr>
     </div>
+    <div class="row marketing">
+        <div class="col-lg-12" id="registration">
+            <h2>Registration</h2>
+            <br>
+        </div>
+        <div class="col-lg-12">
+            There are four different types of tickets available. Tickets can be bought online <a
+                href="https://www.eventbrite.nl/e/tickets-satrday-amsterdam-2018-48122485650">through Eventbrite</a>:
+            <ol>
+                <li><b>Conference tickets</b>: €39.95. Attend a full day of R talks on Saturday September 1st!</li>
+                <li><b>Workshop day tickets</b>: €19.95. Join 3 hours of workshops on Friday August 31st in the
+                    afternoon.
+                </li>
+                <li><b>Combi tickets</b>: €49.95. Get access to the workshops on Friday August 31st as well as the
+                    conference on Saturday September 1st.
+                </li>
+                <li><b>Open source day</b>: free. Registering is all you need to do to become an R open source
+                    contributor!
+                </li>
+            </ol>
+
+            Above mentioned prices include a 21% tax rate.
+            <p></p>
+        </div>
     </div>
 
-<hr>
-  </div>
-  <div class="row marketing">
-    <div class="col-lg-12" id="registration">
-      <h2>Registration</h2>
-      <br>
+    <hr>
+    <div class="row marketing">
+        <div class="col-lg-12" id="sponsors">
+            <h2>Sponsors</h2>
+            <br>
+        </div>
+        <div class="col-lg-12">
+            <p>These cool companies wanted to give something back to the community by sponsoring:</p>
+        </div>
+        <div class="col-sm-6">
+            <h4>Location Sponsor</h4>
+            <br>
+            <img src="https://blog.godatadriven.com/images/logo-large.png" alt="" style="width: 100%">
+            <br>
+        </div>
+        <div class="col-sm-6">
+            <h4>Sticker Sponsor</h4>
+            <img src="https://www.featuredcustomers.com/media/Vender.header/header_TGv6dEG.png" alt=""
+                 style="width: 100%">
+        </div>
     </div>
-    <div class="col-lg-12">
-    	There are four different types of tickets available. Tickets can be bought online <a href="https://www.eventbrite.nl/e/tickets-satrday-amsterdam-2018-48122485650">through Eventbrite</a>:
-    	<ol>
-    		<li><b>Conference tickets</b>: €39.95. Attend a full day of R talks on Saturday September 1st!</li>
-    		<li><b>Workshop day tickets</b>: €19.95. Join 3 hours of workshops on Friday August 31st in the afternoon.</li>
-    		<li><b>Combi tickets</b>: €49.95. Get access to the workshops on Friday August 31st as well as the conference on Saturday September 1st.</li>
-    		<li><b>Open source day</b>: free. Registering is all you need to do to become an R open source contributor!</li>
-    	</ol>
+    <hr>
 
-    	Above mentioned prices include a 21% tax rate.
-      <p></p>
+    <div class="row marketing">
+        <div class="col-lg-12" id="contact">
+            <h2>Committee</h2>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h4>Tess</h4>
+            <img src="photos/tess.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">co-chaiR</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <h4>Steven</h4>
+            <img src="photos/steven.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">co-chaiR</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <h4>Ilse</h4>
+            <img src="photos/ilse.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">financieR</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <h4>Roel</h4>
+            <img src="photos/roel.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">administRator</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <h4>Janine</h4>
+            <img src="photos/janine.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">allRoundR</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <h4>Vincent</h4>
+            <figure class="figure">
+                <img src="photos/vinny.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
+                <figcaption class="figure-caption">initiatoR</figcaption>
+            </figure>
+        </div>
     </div>
-  </div>
 
-  <hr>
-	<div class="row marketing">
-		<div class="col-lg-12" id="sponsors">
-			<h2>Sponsors</h2>
-			<br>
-		</div>
-		<div class="col-lg-12">
-			<p>These cool companies wanted to give something back to the community by sponsoring:</p>
-		</div>
-		<div class="col-sm-6">
-			<h4>Location Sponsor</h4>
-			<br>
-			<img src="https://blog.godatadriven.com/images/logo-large.png" alt="" style="width: 100%">
-			<br>
-		</div>
-		<div class="col-sm-6">
-			<h4>Sticker Sponsor</h4>
-			<img src="https://www.featuredcustomers.com/media/Vender.header/header_TGv6dEG.png" alt="" style="width: 100%">
-		</div>
-	</div>
-	<hr>
+    <hr>
 
-	<div class="row marketing">
-		<div class="col-lg-12" id="contact">
-			<h2>Committee</h2>
-			<br>
-		</div>
-		<div class="col-sm-4">
-			<h4>Tess</h4>
-			<img src="photos/tess.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">co-chaiR</figcaption>
-		</div>
-		<div class="col-sm-4">
-			<h4>Steven</h4>
-			<img src="photos/steven.jpg" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">co-chaiR</figcaption>
-		</div>
-		<div class="col-sm-4">
-			<h4>Ilse</h4>
-			<img src="photos/ilse.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">financieR</figcaption>
-		</div>
-		<div class="col-sm-4">
-			<h4>Roel</h4>
-			<img src="photos/roel.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">administRator</figcaption>
-		</div>
-		<div class="col-sm-4">
-			<h4>Janine</h4>
-			<img src="photos/janine.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			<figcaption class="figure-caption">allRoundR</figcaption>
-		</div>
-		<div class="col-sm-4">
-			<h4>Vincent</h4>
-			<figure class="figure">
-			  <img src="photos/vinny.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
-			  <figcaption class="figure-caption">initiatoR</figcaption>
-			</figure>
-		</div>
-	</div>
+    <section id="codeofconduct">
+        <h2>Code of Conduct</h2>
 
-	<hr>
+        <p>satRdays is dedicated to providing a harassment-free and inclusive conference experience for all in
+            attendance regardless of, but not limited to, gender, sexual orientation, disabilities, physical attributes,
+            age, ethnicity, social standing, religion or political affiliation.</p>
 
-  <section id="codeofconduct">
-      <h2>Code of Conduct</h2>
+        <p>We do not tolerate harassment of participants (including organisers and vendors) in any form. Sexual
+            innuendos and imagery are not appropriate for any conference venue, including presentations.</p>
 
-  <p>satRdays is dedicated to providing a harassment-free and inclusive conference experience for all in attendance regardless of, but not limited to, gender, sexual orientation, disabilities, physical attributes, age, ethnicity, social standing, religion or political affiliation.</p>
+        <p>Anyone violating these rules may be given warning or expelled from the conference (without a refund) at the
+            discretion of the conference organisers.</p>
 
-  <p>We do not tolerate harassment of participants (including organisers and vendors) in any form. Sexual innuendos and imagery are not appropriate for any conference venue, including presentations.</p>
+        <p>Our code of conduct/anti-harassment policy can be found <a
+                href="http://amsterdam2018.satrdays.org/code-of-conduct.html"> here. </a></p>
+    </section>
 
-  <p>Anyone violating these rules may be given warning or expelled from the conference (without a refund) at the discretion of the conference organisers.</p>
+    <div class="row marketing">
+        <div class="col-lg-12" id="location">
+            <h2>Location</h2>
+            <b class="float-right">GoDataDriven HQ</b><br>
+            <p class="float-right">Wibautstraat 202, Amsterdam</p>
+            <br>
+        </div>
+        <div class="col-lg-12">
 
-  <p>Our code of conduct/anti-harassment policy can be found <a href="http://amsterdam2018.satrdays.org/code-of-conduct.html"> here. </a> </p>
-</section>
-
-	<div class="row marketing">
-		<div class="col-lg-12" id="location">
-			<h2>Location</h2>
-			<b class="float-right">GoDataDriven HQ</b><br>
-			<p class="float-right">Wibautstraat 202, Amsterdam</p>
-			<br>
-		</div>
-		<div class="col-lg-12">
-
-			<div id='map'></div>
-			<script>
+            <div id='map'></div>
+            <script>
 				mapboxgl.accessToken = 'pk.eyJ1IjoiY2FudGR1dGNodGhpcyIsImEiOiI1NkVyQUFjIn0.jJ_k-m_D11QLgBGUU0M-jQ';
 				var map = new mapboxgl.Map({
 					container: 'map', // container id
@@ -522,13 +574,14 @@ Solving sudoku's with Rcpp </li>
 						}
 					});
 				});
-			</script>
-		</div>
-	</div>
 
-	<footer class="footer">
-		<p class="text-right">satRdays are funded via the <a href="https://www.r-consortium.org">R consortium</a>.</p>
-	</footer>
+            </script>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="text-right">satRdays are funded via the <a href="https://www.r-consortium.org">R consortium</a>.</p>
+    </footer>
 
 </div> <!-- /container -->
 
