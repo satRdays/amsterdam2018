@@ -36,8 +36,8 @@
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!-- javascript for the map view at the bottom -->
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet'/>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
     <!-- other scripts for bootstrap to work -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
             integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
@@ -54,14 +54,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
             integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
             crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <style>
-		#map {
+		.map {
 			top:0;
 			bottom:0;
 			width:100%;
-			height:500px
+			height:350px
 		}
-
     </style>
 </head>
 <body>
@@ -253,7 +253,7 @@
         </div>
         <div class="col-sm-4">
             <h4>Rianne Schouten</h4>
-            <img src="photos/rianne_schouten.jpeg" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <img src="photos/rianne_shouten.jpeg" class="figure-img img-fluid rounded" alt="" style="width:100%">
             <figcaption class="figure-caption">Generating missing values with R-function ampute</figcaption>
             <br>
         </div>
@@ -273,6 +273,11 @@
             <h4>Gilian Ponte</h4>
             <img src="photos/gilian_ponte.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
             <figcaption class="figure-caption">Scraping the internet with R</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <h4>Nick Jones</h4>
+            <img src="photos/nick_jones.png" class="figure-img img-fluid rounded" alt="" style="width:100%">
+            <figcaption class="figure-caption">Gentle and Practical Introduction to R using the Tidyverse.</figcaption>
         </div>
     </div>
 
@@ -369,7 +374,7 @@
                             <li><b> Olga Sholderer </b> <br>
                                 Using R/ R Markdown to create individual reports
                             </li>
-                            <li><b> Youssef El Bouhassan & Jeroen Groot</b> <br> How do we avoid electric cars breaking
+                            <li><b> Youssef El Bouhassani & Jeroen Groot</b> <br> How do we avoid electric cars breaking
                                 the national grid?
                             </li>
                         </ol>
@@ -539,49 +544,24 @@
 
     <div class="row marketing">
         <div class="col-lg-12" id="location">
+            <h2>Workshop Location</h2>
+            <b class="float-right">Uber HQ</b><br>
+            <p class="float-right">Meester Treublaan 7, Amsterdam</p>
+            <br>
+        </div>
+        <div class="col-lg-12">
+            <div id='map2' class="map"></div>
+        </div>
+    </div>
+    <div class="row marketing">
+        <div class="col-lg-12" id="location">
             <h2>Main Event Location</h2>
             <b class="float-right">GoDataDriven HQ</b><br>
             <p class="float-right">Wibautstraat 202, Amsterdam</p>
             <br>
         </div>
         <div class="col-lg-12">
-
-            <div id='map'></div>
-            <script>
-				mapboxgl.accessToken = 'pk.eyJ1IjoiY2FudGR1dGNodGhpcyIsImEiOiI1NkVyQUFjIn0.jJ_k-m_D11QLgBGUU0M-jQ';
-				var map = new mapboxgl.Map({
-					container: 'map', // container id
-					style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
-					center: [4.912933, 52.352346], // starting position [lng, lat]
-					zoom: 15 // starting zoom
-				});
-				map.loadImage('satRdayLogo-small.png', function(error, image) {
-				 	if (error) throw error;
-			        map.addImage('cat', image);
-					map.addLayer({
-						"id": "points",
-						"type": "symbol",
-						"source": {
-							"type": "geojson",
-							"data": {
-								"type": "FeatureCollection",
-								"features": [{
-									"type": "Feature",
-									"geometry": {
-										"type": "Point",
-										"coordinates": [4.912933, 52.352346]
-									}
-								}]
-							}
-						},
-						"layout": {
-							"icon-image": "cat",
-							"icon-size": 0.25
-						}
-					});
-				});
-
-            </script>
+            <div id='map1' class="map"></div>
         </div>
     </div>
 
